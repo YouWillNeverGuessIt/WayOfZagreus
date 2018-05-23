@@ -34,6 +34,9 @@ namespace UserInterfaceTests.Views.Home
 
             //now check that navbar works
             Views.Shared.Layout.NavBar_ClickAllLinks(AssemblyFile.driver, _controller, _action);
+
+            //now check that footer works
+            Views.Shared.Layout.Footer_ClickAllLinks(AssemblyFile.driver, _controller, _action);
         }
 
         [TestInitialize]
