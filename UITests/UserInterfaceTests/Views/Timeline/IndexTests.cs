@@ -55,6 +55,11 @@ namespace UserInterfaceTests.Views.Timeline
             Shared.Layout.SkillsMap_ClickAllLinks(AssemblyFile.driver, _controller, _action);
 
             //check that each image exists
+            AssemblyFile.driver.FindElement(By.Id("Stats_Image21May2018"));
+            AssemblyFile.driver.FindElement(By.Id("Stats_Image20May2018"));
+            AssemblyFile.driver.FindElement(By.Id("Stats_Image19May2018"));
+            AssemblyFile.driver.FindElement(By.Id("Stats_Image14May2018"));
+            AssemblyFile.driver.FindElement(By.Id("Stats_Image11May2018"));
             AssemblyFile.driver.FindElement(By.Id(Extensions.SkillsImage_10May2018ID));
             AssemblyFile.driver.FindElement(By.Id(Extensions.SkillsImage_April2018ID));
 
