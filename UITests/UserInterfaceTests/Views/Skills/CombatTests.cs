@@ -52,7 +52,15 @@ namespace UserInterfaceTests.Views.Skills
         [TestMethod]
         public void Skills_Combat_ClickAllLinks_NoLogin()
         {
-            Assert.AreEqual(true, true);//replace this with links if any become available on page
+
+            //validate all links to on site pages
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCombat_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CraftingLinkSkillsCombat_1", Extensions.SkillsControllerName, Extensions.SkillName_Crafting, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsCombat_1", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CraftingLinkSkillsCombat_2", Extensions.SkillsControllerName, Extensions.SkillName_Crafting, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkSkillsCombat_1", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkSkillsCombat_2", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
+
 
         }
     }
