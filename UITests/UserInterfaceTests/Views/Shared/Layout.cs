@@ -230,5 +230,17 @@ namespace UserInterfaceTests.Views.Shared
             //return to original page
             Extensions.NavigateToPage(currentDriver, controller, action, data);
         }
+
+        //clicks and validates all links inside the footer
+        //fails if any links fail
+        public static void Footer_ClickAllLinks(IWebDriver currentDriver, string controller, string action, string data = null)
+        {
+            //Click the about the author link
+            currentDriver.FindElement(By.Id("AboutLinkFooter")).Click();
+            //validate page transition
+            Extensions.ValidatePageTransition(currentDriver, Extensions.HomeControllerName, "About");
+            //return to original page
+            Extensions.NavigateToPage(currentDriver, controller, action, data);
+        }
     }
 }
