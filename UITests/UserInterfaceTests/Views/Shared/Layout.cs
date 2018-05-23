@@ -51,172 +51,76 @@ namespace UserInterfaceTests.Views.Shared
             currentDriver.FindElement(By.Id(Extensions.SkillsMap_ID));
 
             //Attack
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_AttackID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_AttackID, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, controller, action);
 
             //Hitpoints
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_HitpointsID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_HitpointsID, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, controller, action);
 
             //Mining
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_MiningID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Mining);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_MiningID, Extensions.SkillsControllerName, Extensions.SkillName_Mining, controller, action);
 
             //Strength
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_StrengthID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_StrengthID, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, controller, action);
 
             //Agility
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_AgilityID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Agility);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_AgilityID, Extensions.SkillsControllerName, Extensions.SkillName_Agility, controller, action);
 
             //Smithing
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_SmithingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_SmithingID, Extensions.SkillsControllerName, Extensions.SkillName_Smithing, controller, action);
 
             //Defense
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_DefenseID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_DefenseID, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, controller, action);
 
             //Herblore
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_HerbloreID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Herblore);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_HerbloreID, Extensions.SkillsControllerName, Extensions.SkillName_Herblore, controller, action);
 
             //Fishing
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_FishingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_FishingID, Extensions.SkillsControllerName, Extensions.SkillName_Fishing, controller, action);
 
             //Range
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_RangeID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_RangeID, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, controller, action);
 
             //Thieving
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_ThievingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Thieving);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_ThievingID, Extensions.SkillsControllerName, Extensions.SkillName_Thieving, controller, action);
 
             //Cooking
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_CookingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_CookingID, Extensions.SkillsControllerName, Extensions.SkillName_Cooking, controller, action);
 
             //Prayer
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_PrayerID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Prayer);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_PrayerID, Extensions.SkillsControllerName, Extensions.SkillName_Prayer, controller, action);
 
             //Crafting
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_CraftingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Crafting);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_CraftingID, Extensions.SkillsControllerName, Extensions.SkillName_Crafting, controller, action);
 
             //Firemaking
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_FiremakingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Firemaking);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_FiremakingID, Extensions.SkillsControllerName, Extensions.SkillName_Firemaking, controller, action);
 
             //Magic
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_MagicID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Magic);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_MagicID, Extensions.SkillsControllerName, Extensions.SkillName_Magic, controller, action);
 
             //Fletching
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_FletchingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Fletching);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_FletchingID, Extensions.SkillsControllerName, Extensions.SkillName_Fletching, controller, action);
 
             //Woodcutting
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_WoodcuttingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Woodcutting);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_WoodcuttingID, Extensions.SkillsControllerName, Extensions.SkillName_Woodcutting, controller, action);
 
             //Runecrafting
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_RunecraftingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_RunecraftingID, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, controller, action);
 
             //Slayer
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_SlayerID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Slayer);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_SlayerID, Extensions.SkillsControllerName, Extensions.SkillName_Slayer, controller, action);
 
             //Farming
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_FarmingID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Farming);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_FarmingID, Extensions.SkillsControllerName, Extensions.SkillName_Farming, controller, action);
 
             //Construction
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_ConstructionID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Construction);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_ConstructionID, Extensions.SkillsControllerName, Extensions.SkillName_Construction, controller, action);
 
             //Hunter
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_HunterID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_Hunter);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_HunterID, Extensions.SkillsControllerName, Extensions.SkillName_Hunter, controller, action);
 
             //Overall
-            currentDriver.FindElement(By.Id(Extensions.SkillsMap_OverallID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.SkillsMap_OverallID, Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills, controller, action);
         }
 
         //clicks and validates all links inside the footer
