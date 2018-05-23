@@ -51,47 +51,19 @@ namespace UserInterfaceTests.Views.Skills
         {
             //Fishing links
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_2")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_2", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_3")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_3", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_4")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_4", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_5")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_5", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_6")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_6", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsCooking_7")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsCooking_7", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
 
         }
     }
