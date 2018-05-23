@@ -29,25 +29,13 @@ namespace UserInterfaceTests.Views.Shared
         public static void NavBar_ClickAllLinks(IWebDriver currentDriver, string controller, string action, string data = null)
         {
             //navigate to home
-            currentDriver.FindElement(By.Id(Extensions.NavBar_HomeLinkID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.HomeControllerName, Extensions.TheWordIndex);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver,controller,action,data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.NavBar_HomeLinkID, Extensions.HomeControllerName, Extensions.TheWordIndex, controller, action);
 
             //navigate to skills
-            currentDriver.FindElement(By.Id(Extensions.NavBar_SkillsLinkID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.SkillsControllerName, Extensions.TheWordIndex);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.NavBar_SkillsLinkID, Extensions.SkillsControllerName, Extensions.TheWordIndex, controller, action);
 
             //navigate to Timeline
-            currentDriver.FindElement(By.Id(Extensions.NavBar_TimelineLinkID)).Click();
-            //validate
-            Extensions.ValidatePageTransition(currentDriver, Extensions.TimelineControllerName, Extensions.TheWordIndex);
-            //return to original page
-            Extensions.NavigateToPage(currentDriver, controller, action, data);
+            Extensions.ValidateClickByID(AssemblyFile.driver, Extensions.NavBar_TimelineLinkID, Extensions.TimelineControllerName, Extensions.TheWordIndex, controller, action);
         }
 
         //Clicks all links provided by the skills map. The skills map is what 
