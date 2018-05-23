@@ -51,16 +51,16 @@ namespace UserInterfaceTests.Views.Skills
         {
             //combat links
 
-            Extensions.ValidateClickByID(AssemblyFile.driver, "CombatLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CombatLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, _controller, _action);
 
             //cooking links
 
-            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
 
             //Smithing links
 
-            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_2", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_2", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
 
 
             //off site links
