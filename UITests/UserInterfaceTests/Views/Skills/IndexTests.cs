@@ -111,137 +111,61 @@ namespace UserInterfaceTests.Views.Skills
 
             //check that the written links to each of the skills works
             //Agility
-            AssemblyFile.driver.FindElement(By.Id("AgilityLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Agility);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-            
+            Extensions.ValidateClickByID(AssemblyFile.driver, "AgilityLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Agility, _controller, _action);
+
             //Combat
-            AssemblyFile.driver.FindElement(By.Id("CombatLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-            
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CombatLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, _controller, _action);
+
             //Construction
-            AssemblyFile.driver.FindElement(By.Id("ConstructionLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Construction);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-            
+            Extensions.ValidateClickByID(AssemblyFile.driver, "ConstructionLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Construction, _controller, _action);
+
             //Cooking
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-            
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
+
             //Crafting
-            AssemblyFile.driver.FindElement(By.Id("CraftingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Crafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CraftingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Crafting, _controller, _action);
 
             //Farming
-            AssemblyFile.driver.FindElement(By.Id("FarmingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Farming);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FarmingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Farming, _controller, _action);
 
             //Firemaking
-            AssemblyFile.driver.FindElement(By.Id("FiremakingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Firemaking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FiremakingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Firemaking, _controller, _action);
 
             //Fishing
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
             //Fletching
-            AssemblyFile.driver.FindElement(By.Id("FletchingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fletching);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FletchingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Fletching, _controller, _action);
 
             //Herblore
-            AssemblyFile.driver.FindElement(By.Id("HerbloreLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Herblore);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "HerbloreLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Herblore, _controller, _action);
 
-            //Agility
-            AssemblyFile.driver.FindElement(By.Id("HunterLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Hunter);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            //Hunter
+            Extensions.ValidateClickByID(AssemblyFile.driver, "HunterLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Hunter, _controller, _action);
 
             //Magic
-            AssemblyFile.driver.FindElement(By.Id("MagicLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Magic);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "MagicLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Magic, _controller, _action);
 
             //Mining
-            AssemblyFile.driver.FindElement(By.Id("MiningLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Mining);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "MiningLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Mining, _controller, _action);
 
             //Prayer
-            AssemblyFile.driver.FindElement(By.Id("PrayerLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Prayer);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "PrayerLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Prayer, _controller, _action);
 
             //Runecrafting
-            AssemblyFile.driver.FindElement(By.Id("RunecraftingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, _controller, _action);
 
             //Slayer
-            AssemblyFile.driver.FindElement(By.Id("SlayerLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Slayer);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SlayerLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Slayer, _controller, _action);
 
             //Smithing
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
 
             //Thieving
-            AssemblyFile.driver.FindElement(By.Id("ThievingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Thieving);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "ThievingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Thieving, _controller, _action);
 
             //Woodcutting
-            AssemblyFile.driver.FindElement(By.Id("WoodcuttingLinkSkillsIndex")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Woodcutting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "WoodcuttingLinkSkillsIndex", Extensions.SkillsControllerName, Extensions.SkillName_Woodcutting, _controller, _action);
         }
     }
 }
