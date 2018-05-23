@@ -65,145 +65,51 @@ namespace UserInterfaceTests.Views.Timeline
             AssemblyFile.driver.FindElement(By.Id(Extensions.SkillsImage_April2018ID));
 
             //check that links to onsite pages work
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkTimelineIndex21May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndex21May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndex20May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndex20May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CraftingLinkTimelineIndex19May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Crafting, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CraftingLinkTimelineIndex19May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Crafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkTimelineIndex14May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("RunecraftingLinkTimelineIndex14May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkTimelineIndex11May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndex11May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndex10May2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndex10May2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndexApril2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndexApril2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkTimelineIndexApril2018_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndexApril2018_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndexSept2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndexSept2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkTimelineIndexSept2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndexSept2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndexSept2017_2", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndexSept2017_2")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "FishingLinkTimelineIndexSept2017_3", Extensions.SkillsControllerName, Extensions.SkillName_Fishing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndexSept2017_3")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "MiningLinkTimelineIndexSept2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Mining, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("MiningLinkTimelineIndexSept2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Mining);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CraftingLinkTimelineIndexSept2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Crafting, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CraftingLinkTimelineIndexSept2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Crafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkTimelineIndexSept2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("RunecraftingLinkTimelineIndexSept2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "RunecraftingLinkTimelineIndexSept2017_2", Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("RunecraftingLinkTimelineIndexSept2017_2")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "ConstructionLinkTimelineIndexAug2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Construction, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("ConstructionLinkTimelineIndexAug2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Construction);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SkillsLinkTimelineIndexAug2017_1", Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("SkillsLinkTimelineIndexAug2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CombatLinkTimelineIndexAug2017_1", Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("CombatLinkTimelineIndexAug2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkTimelineIndexAug2017_1", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkTimelineIndexAug2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkTimelineIndexAug2017_2", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkTimelineIndexAug2017_2")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkTimelineIndexAug2017_3", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, _controller, _action);
 
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkTimelineIndexAug2017_3")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-
-            AssemblyFile.driver.FindElement(By.Id("SkillsLinkTimelineIndexJuly2017_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
-
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SkillsLinkTimelineIndexJuly2017_1", Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills, _controller, _action);
 
 
             //check that links to offsite pages work
