@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way of Zag - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="NavBarCollapseButton">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", id="HomeLinkNavBar"})
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Skills", "Index", "Skills", routeValues: null, htmlAttributes: new { id = "SkillsLinkNavBar" })</li>
+                    <li>@Html.ActionLink("Timeline", "Index", "Timeline", routeValues: null, htmlAttributes: new { id = "TimelineLinkNavBar" })</li>
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - All written by Zagreus2 and zagreus420</p>
+            @Html.ActionLink("About The Authors", "About", "Home", routeValues: null, htmlAttributes: new { id = "AboutLinkFooter"})
+        </footer>
+        @*this following commented out section is how mike does his footer*@
+        @*<hr />
+        <footer>
+            <div class="footer navbar-fixed-bottom">
+                <div style="background-color:black">
+                    &nbsp;&nbsp;&copy; @DateTime.Now.Year - Avatar Attendance, all rights reserved
+                    &nbsp;&nbsp;
+                    @Html.ActionLink("About", "About", "Home", new { controller = "Home" }, new { @class = "btn btn-link" })
+                    @Html.ActionLink("Privacy Policy", "Privacy", "Home", new { controller = "Home" }, new { @class = "btn btn-link" })
+                    @Html.ActionLink("Contact", "Contact", "Home", new { controller = "Home" }, new { @class = "btn btn-link" })
+                </div>
+            </div>
+        </footer>*@
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    @{
+        var myAreaID = "Area-" + ViewContext.RouteData.DataTokens["area"] + "-Done";
+        var myControllerID = "Controller-" + ViewContext.Controller.ValueProvider.GetValue("controller").RawValue + "-Done";
+        var myActionID = "View-" + ViewContext.RouteData.Values["action"] + "-Done";
+    }
+
+    <div id="Page-Done"></div>
+    <div id="@myAreaID"></div>
+    <div id="@myControllerID"></div>
+    <div id="@myActionID"></div>
+
+    <map name="SkillsMap" id="SkillsMap">
+        @*coords go: x1, y1, x2, y2 AKA right bottom corner and left top corner, 0,0 being the left top corner coord*@
+        @*always use this map for stats image, as well as starting the id tag with Stats_Image_Whateverthefuck you want to use to label it*@
+        <area shape="rect" coords="0,0,80,40" alt="Attack" href="~/Skills/Combat" id="SkillsMap_Attack">
+        <area shape="rect" coords="80,0,160,40" alt="Hitpoints" href="~/Skills/Combat" id="SkillsMap_Hitpoints">
+        <area shape="rect" coords="160,0,240,40" alt="Mining" href="~/Skills/Mining" id="SkillsMap_Mining">
+        <area shape="rect" coords="0,40,80,80" alt="Strength" href="~/Skills/Combat" id="SkillsMap_Strength">
+        <area shape="rect" coords="80,40,160,80" alt="Agility" href="~/Skills/Agility" id="SkillsMap_Agility">
+        <area shape="rect" coords="160,40,240,80" alt="Smithing" href="~/Skills/Smithing" id="SkillsMap_Smithing">
+        <area shape="rect" coords="0,80,80,120" alt="Defense" href="~/Skills/Combat" id="SkillsMap_Defense">
+        <area shape="rect" coords="80,80,160,120" alt="Herblore" href="~/Skills/Herblore" id="SkillsMap_Herblore">
+        <area shape="rect" coords="160,80,240,120" alt="Fishing" href="~/Skills/Fishing" id="SkillsMap_Fishing">
+        <area shape="rect" coords="0,120,80,160" alt="Range" href="~/Skills/Combat" id="SkillsMap_Range">
+        <area shape="rect" coords="80,120,160,160" alt="Thieving" href="~/Skills/Thieving" id="SkillsMap_Thieving">
+        <area shape="rect" coords="160,120,240,160" alt="Cooking" href="~/Skills/Cooking" id="SkillsMap_Cooking">
+        <area shape="rect" coords="0,160,80,200" alt="Prayer" href="~/Skills/Prayer" id="SkillsMap_Prayer">
+        <area shape="rect" coords="80,160,160,200" alt="Crafting" href="~/Skills/Crafting" id="SkillsMap_Crafting">
+        <area shape="rect" coords="160,160,240,200" alt="Firemaking" href="~/Skills/Firemaking" id="SkillsMap_Firemaking">
+        <area shape="rect" coords="0,200,80,240" alt="Magic" href="~/Skills/Magic" id="SkillsMap_Magic">
+        <area shape="rect" coords="80,200,160,240" alt="Fletching" href="~/Skills/Fletching" id="SkillsMap_Fletching">
+        <area shape="rect" coords="160,200,240,240" alt="Woodcutting" href="~/Skills/Woodcutting" id="SkillsMap_Woodcutting">
+        <area shape="rect" coords="0,240,80,280" alt="Runecrafting" href="~/Skills/Runecrafting" id="SkillsMap_Runecrafting">
+        <area shape="rect" coords="80,240,160,280" alt="Slayer" href="~/Skills/Slayer" id="SkillsMap_Slayer">
+        <area shape="rect" coords="160,240,240,280" alt="Farming" href="~/Skills/Farming" id="SkillsMap_Farming">
+        <area shape="rect" coords="0,280,80,320" alt="Construction" href="~/Skills/Construction" id="SkillsMap_Construction">
+        <area shape="rect" coords="80,280,160,320" alt="Hunter" href="~/Skills/Hunter" id="SkillsMap_Hunter">
+        <area shape="rect" coords="160,280,240,320" alt="Overall" href="~/Skills/" id="SkillsMap_Overall">
+    </map>
+
+</body>
+</html>

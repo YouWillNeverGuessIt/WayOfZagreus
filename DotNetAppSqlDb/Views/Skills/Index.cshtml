@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Skills Home";
+}
+
+<h2 id="Page_Title_SkillsIndex">Skills</h2>
+
+<h4>As of 19 May, 2018</h4>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <figure>
+                <img src="~/StillCaptures/skills_21May2018.jpg" alt="Stats" id="Stats_Image_Current" usemap="#SkillsMap">
+                <figcaption id="Stats_Image_Caption">The skills of zagreus420</figcaption>
+            </figure>
+            <p>And <a href="http://services.runescape.com/m=hiscore_oldschool_ultimate/hiscorepersonal.ws?user1=zagreus420" target="_blank" id="osrsHiscoresLink">here</a> is a link to the OSRS hiscores in case you really don't believe me. Which I honestly get, I mean I'm just a dude on the internet, I could be lying through my big fat teeth.</p>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li>
+                    @Html.ActionLink("Agility", "Agility", "Skills", routeValues: null, htmlAttributes: new { id = "AgilityLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Combat Skills", "Combat", "Skills", routeValues: null, htmlAttributes: new { id = "CombatLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Construction", "Construction", "Skills", routeValues: null, htmlAttributes: new { id = "ConstructionLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Cooking", "Cooking", "Skills", routeValues: null, htmlAttributes: new { id = "CookingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Crafting", "Crafting", "Skills", routeValues: null, htmlAttributes: new { id = "CraftingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Farming", "Farming", "Skills", routeValues: null, htmlAttributes: new { id = "FarmingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Firemaking", "Firemaking", "Skills", routeValues: null, htmlAttributes: new { id = "FiremakingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Fishing", "Fishing", "Skills", routeValues: null, htmlAttributes: new { id = "FishingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Fletching", "Fletching", "Skills", routeValues: null, htmlAttributes: new { id = "FletchingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Herblore", "Herblore", "Skills", routeValues: null, htmlAttributes: new { id = "HerbloreLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Hunter", "Hunter", "Skills", routeValues: null, htmlAttributes: new { id = "HunterLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Magic", "Magic", "Skills", routeValues: null, htmlAttributes: new { id = "MagicLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Mining", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Prayer", "Prayer", "Skills", routeValues: null, htmlAttributes: new { id = "PrayerLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Runecrafting", "Runecrafting", "Skills", routeValues: null, htmlAttributes: new { id = "RunecraftingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Slayer", "Slayer", "Skills", routeValues: null, htmlAttributes: new { id = "SlayerLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Smithing", "Smithing", "Skills", routeValues: null, htmlAttributes: new { id = "SmithingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Thieving", "Thieving", "Skills", routeValues: null, htmlAttributes: new { id = "ThievingLinkSkillsIndex" })
+                </li>
+                <li>
+                    @Html.ActionLink("Woodcutting", "Woodcutting", "Skills", routeValues: null, htmlAttributes: new { id = "WoodcuttingLinkSkillsIndex" })
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

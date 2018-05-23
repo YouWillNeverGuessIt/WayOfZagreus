@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home of bootie";
+}
+
+
+
+<h1>Hello faggots</h1>
+
+<p>This site really only exists for one reason: to show the progress I have made as the Ultimate Ironman zagreus420 in Old School Runescape. It's not really meant to be a guide. I may not always be using the best method, but I will always post exactly how I obtained the levels, items, quest points, and whatever else. If you find it helpful, great. If not, idc man.</p>
+
+<h2>What Am I Doing Right Now?</h2>
+<p>Currently my goal is to get 99 @Html.ActionLink("Cooking", "Cooking", "Skills", routeValues: null, htmlAttributes: new { id = "CookingLinkHomeIndex_1" }) and 96 @Html.ActionLink("Fishing", "Fishing", "Skills", routeValues: null, htmlAttributes: new { id = "FishingLinkHomeIndex_1" }). I've got a ton of feathers, so I'm hanging out at Barbarian Village @Html.ActionLink("fishing", "Fishing", "Skills", routeValues: null, htmlAttributes: new { id = "fishingLinkHomeIndex_2" }) and @Html.ActionLink("cooking", "Cooking", "Skills", routeValues: null, htmlAttributes: new { id = "CookingLinkHomeIndex_2" }) trout and salmon.</p>
+
+<h2>Current Outfit</h2>
+<img src="~/StillCaptures/currentOutfit.jpg" alt="Worn Equipment" id="Worn_Equipment_Image">
+<h4>
+    Santa Hat -- Xmas event<br>
+    Purple Cape -- Got a cape from a highwayman, got 2 woad leaves from Wyson the gardener in Falador, picked 3 redberries from the bushes south of Varrock, went to Aggie in Draynor for the blue and red dye, combined the dyes to make purple, and boom purple cape<br>
+    Amulet of Defense -- I got an emerald from a rock while @Html.ActionLink("Mining", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkHomeIndex_1" }), killed dark wizards until I obtained cosmic runes, the air runes I got from the Magic Tutor, ball of wool from sheep, and the gold from @Html.ActionLink("Mining", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkHomeIndex_2" }) in the Al Kharid mine.<br>
+    Iron Arrows -- Killing minotaurs in the Stronghold of Security<br>
+    Skull Sceptre -- Killed minotaurs, flesh crawlers, catablapon, and ankou in the Stronghold of Security<br>
+    Chronicle -- Diango in Draynor<br>
+    Easter Holiday Reward top and bottom -- Easter Event<br>
+    Mime Gloves and Boots -- Mime random event<br>
+    Diamond Ring -- Found a diamaond while @Html.ActionLink("Mining", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkHomeIndex_3" }) and @Html.ActionLink("mined", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkHomeIndex_4" }) the gold in Al Kharid<br>
+</h4>
+
+<h2>Current Inventory</h2>
+<img src="~/StillCaptures/currentInv.jpg" alt="Inventory" id="Inventory_Image">
+<h4>
+    Stack o' coins -- From selling everything I can to specialty stores, and the rest to general stores.<br>
+    Mind and Air Runes -- From the Magic Tutor in Lumbridge. She gives 30 air and mind runes every 30 minutes, the same amount of time it takes for home teleport to recharge. <br>
+    Rune Pickaxe -- Bought from the pickaxe shop in the Dwarven Mine<br>
+    Mithril Axe -- Made by @Html.ActionLink("Smithing", "Smithing", "Skills", routeValues: null, htmlAttributes: new { id = "SmithingLinkHomeIndex_1" }), ore obtained from @Html.ActionLink("Mining", "Mining", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkHomeIndex_5" }) in Edgeville Dungeon Mine, @Html.ActionLink("smelted", "Smithing", "Skills", routeValues: null, htmlAttributes: new { id = "SmithingLinkHomeIndex_2" }) in Lumbridge furnace, @Html.ActionLink("smithed", "Smithing", "Skills", routeValues: null, htmlAttributes: new { id = "SmithingLinkHomeIndex_3" }) on Varrock anvils.<br>
+    Law Runes -- From killing Dark Wizards south of Varrock and in Draynor by the willow trees.<br>
+    Nature Runes -- From killing Dark Wizards and random events.<br>
+    Feathers and fly fishing rod -- from the fishing shop in Port Sarim.<br>
+</h4>
+
+<h2>My Google Spreadsheet</h2>
+<a href="https://docs.google.com/spreadsheets/d/1-lIrV1WU4C2QaVkVDSQ9AEZCl2nbwjhn4sTEZ5I-0_A/edit?usp=sharing" target="_blank" id="GoogleSheetsosrsSheetLink">https://docs.google.com/spreadsheets/d/1-lIrV1WU4C2QaVkVDSQ9AEZCl2nbwjhn4sTEZ5I-0_A/edit?usp=sharing</a>
+<p>This spreadsheet contains all the info I have gathered accross both my ultimate ironman and regular accounts. I use it  to find out what the best use of my time would be to gain experience or gold or whatever.</p>
+
+quests
+I want show an image on the homepage that is exactly like the runescape menu below the minimap, except the bottom bar and the minigame parts
+
+
+
+@*needs extensive testing still on this image map*@
+<map name="MenuMap" id="MenuMap">
+    @*coords go: x1, y1, x2, y2 AKA right bottom corner and left top corner, 0,0 being the left top corner coord*@
+    @*always use this map for stats image, as well as starting the id tag with Stats_Image_Whateverthefuck you want to use to label it*@
+    <area shape="rect" coords="80, 40, 0, 0" alt="Combat" href="~/Skills/Combat" id="MenuMap_Combat">
+    <area shape="rect" coords="160, 40, 80, 0" alt="Skills" href="~/Skills/Index" id="ManuMap_Skills">
+    <area shape="rect" coords="0,0,0,0" alt="Quests" href="~/Home/" id="MenuMap_Quests">
+    <area shape="rect" coords="0,0,0,0" alt="Inv" href="~/Home/" id="MenuMap_Inv">
+    <area shape="rect" coords="0,0,0,0" alt="Equipment" href="~/Home/" id="MenuMap_Equipment">
+    <area shape="rect" coords="0,0,0,0" alt="Prayer" href="~/Skills/Prayer" id="MenuMap_Prayer">
+    <area shape="rect" coords="0,0,0,0" alt="Spells" href="~/Skills/Magic" id="MenuMap_Magic">
+    @*<area shape="rect" coords="278, 368, 38, 48" alt="skillsImagelocation" href="~/Skills/Index" id="MenuMap_SkillsImageLocationthisiswhereitgoes">*@
+    @*<area shape="rect" coords="268, 358, 48, 51" alt="EquipmentImagelocation" href="~/Home/" id="MenuMap_EquipmentImageLocationthisiswhereitgoes">*@
+</map>
