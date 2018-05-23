@@ -50,6 +50,7 @@ namespace UserInterfaceTests.Views.Timeline
             //there are currently only two images, but both of them have tons of links to test
             //BUT that doesn't matter! because techincally, skillsmap only appears once on the html page, and multiple images use that map
             // so the skills map once and test that the images simply exist
+            //you'll have to find a better way to test that the size of each box in the skill map is correct
             
             //check that the skills map works
             Shared.Layout.SkillsMap_ClickAllLinks(AssemblyFile.driver, _controller, _action);
@@ -64,6 +65,30 @@ namespace UserInterfaceTests.Views.Timeline
             AssemblyFile.driver.FindElement(By.Id(Extensions.SkillsImage_April2018ID));
 
             //check that links to onsite pages work
+
+            AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndex21May2018_1")).Click();
+            //validate
+            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
+            //return to original page
+            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+
+            AssemblyFile.driver.FindElement(By.Id("FishingLinkTimelineIndex20May2018_1")).Click();
+            //validate
+            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
+            //return to original page
+            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+
+            AssemblyFile.driver.FindElement(By.Id("CraftingLinkTimelineIndex19May2018_1")).Click();
+            //validate
+            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Crafting);
+            //return to original page
+            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+
+            AssemblyFile.driver.FindElement(By.Id("RunecraftingLinkTimelineIndex14May2018_1")).Click();
+            //validate
+            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Runecrafting);
+            //return to original page
+            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
 
             AssemblyFile.driver.FindElement(By.Id("CookingLinkTimelineIndex11May2018_1")).Click();
             //validate
@@ -178,6 +203,8 @@ namespace UserInterfaceTests.Views.Timeline
             Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_OverallSkills);
             //return to original page
             Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+
+
 
             //check that links to offsite pages work
 
