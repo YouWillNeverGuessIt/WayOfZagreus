@@ -165,6 +165,25 @@ namespace UserInterfaceTests
             return true;
         }
 
+        //Finds the given ID on the page, clicks it, validates the link landed
+        //  on the correct page, and returns to original page
+        //This function was made purely to follow the DRY principle
+        //  Don't Repeat Yourself
+        //  because even though your life should be wet, code needs to be DRY 
+        //  to work. and there was a SHITTY TON of repeated code before this
+        //Returns true unless validation failed
+        public static bool ValidateClickByID(IWebDriver driver, string idToFind, string destController, string destAction, string origController, string origAction, string destData = null, string origData = null)
+        {
+            //find and click the given ID on the page
+            driver.FindElement(By.Id(idToFind)).Click();
+            //validate that the correct page was landed on
+            ValidatePageTransition(driver, destController, destAction, destData);
+            //return to original page
+            NavigateToPage(driver, origController, origAction, origData);
+
+            return true;
+        }
+
 
         #endregion
     }
