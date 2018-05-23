@@ -51,33 +51,17 @@ namespace UserInterfaceTests.Views.Skills
         {
             //combat links
 
-            AssemblyFile.driver.FindElement(By.Id("CombatLinkSkillsFishing_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CombatLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_CombatSkills, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
 
             //cooking links
 
-            AssemblyFile.driver.FindElement(By.Id("CookingLinkSkillsFishing_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Cooking);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "CookingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Cooking, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
 
             //Smithing links
 
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkSkillsFishing_1")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_1", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
+            Extensions.ValidateClickByID(AssemblyFile.driver, "SmithingLinkSkillsFishing_2", Extensions.SkillsControllerName, Extensions.SkillName_Smithing, Extensions.SkillsControllerName, Extensions.SkillName_Fishing);
 
-            AssemblyFile.driver.FindElement(By.Id("SmithingLinkSkillsFishing_2")).Click();
-            //validate
-            Extensions.ValidatePageTransition(AssemblyFile.driver, Extensions.SkillsControllerName, Extensions.SkillName_Smithing);
-            //return to original page
-            Extensions.NavigateToPage(AssemblyFile.driver, _controller, _action);
 
             //off site links
             //check that the google sheets link works
