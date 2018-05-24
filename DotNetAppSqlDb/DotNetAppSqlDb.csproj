@@ -258,6 +258,7 @@
     <Content Include="Views\Skills\Prayer.cshtml" />
     <Content Include="Views\Skills\Magic.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Skills\_SkillsLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
