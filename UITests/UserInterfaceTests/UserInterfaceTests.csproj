@@ -84,6 +84,7 @@
     <Compile Include="Views\Skills\MiningTests.cs" />
     <Compile Include="Views\Skills\PrayerTests.cs" />
     <Compile Include="Views\Skills\RunecraftingTests.cs" />
+    <Compile Include="Views\Skills\_SkillsLayout.cs" />
     <Compile Include="Views\Skills\SlayerTests.cs" />
     <Compile Include="Views\Skills\SmithingTests.cs" />
     <Compile Include="Views\Skills\ThievingTests.cs" />

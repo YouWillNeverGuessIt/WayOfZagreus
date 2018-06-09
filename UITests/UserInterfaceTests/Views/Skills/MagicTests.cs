@@ -38,6 +38,10 @@ namespace UserInterfaceTests.Views.Skills
 
             //now check that footer works
             Views.Shared.Layout.Footer_ClickAllLinks(AssemblyFile.driver, _controller, _action);
+
+
+            //since this is a skills page, check that skills layout is working
+            Views.Skills._SkillsLayout.SideBar_ClickAllLinks(AssemblyFile.driver, _controller, _action);
         }
 
         [TestInitialize]
