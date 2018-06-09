@@ -8,8 +8,13 @@ namespace DotNetAppSqlDb.Controllers
 {
     public class ErrorController : Controller
     {
-        // GET: Error
+        
         public ActionResult Page404()
+        {
+            return View();
+        }
+
+        public ActionResult General()
         {
             return View();
         }
