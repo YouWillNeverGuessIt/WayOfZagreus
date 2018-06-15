@@ -20,14 +20,16 @@
 
 <h4 id="Section_Header_Lvl29-30">Level 29 - 30</h4>
 <p>
-    Mine iron in Varrock, canoe to Lumbridge furnace, canoe to varrock, smith at anvil, sell iron items to specialty shop.
+    @Html.ActionLink("Mine", "Mine", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkSkillsSmithing_1" })
+    iron in Varrock, canoe to Lumbridge furnace, canoe to Varrock, smith at anvil, sell iron items to specialty shop.
 </p>
 
 <hr id="Section_Divider">
 
 <h4 id="Section_Header_Lvl30-52">Level 30 - 52</h4>
 <p>
-    Mine iron and coal in Edgeville dungeon mine (beware of skeletons and hobgoblins), take canoe to lumbridge furnace, canoe back to varrock anvil, sell steel items to specialty shops
+    @Html.ActionLink("Mine", "Mine", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkSkillsSmithing_2" })
+    iron and coal in Edgeville dungeon mine (beware of skeletons and hobgoblins), take canoe to Lumbridge furnace, canoe back to Varrock anvil, sell steel items to specialty shops.
 </p>
 
 <hr id="Section_Divider">
@@ -35,7 +37,8 @@
 <h4 id="Section_Header_MyPath">My Favorite Method</h4>
 <ul>
     <li>
-        Mine whatever ore is needed in the Edgeville Dungeon mine
+        @Html.ActionLink("Mine", "Mine", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkSkillsSmithing_3" })
+        whatever ore is needed in the Edgeville Dungeon mine
     </li>
     <li>
         Take canoe to Lumbridge
@@ -50,38 +53,97 @@
         Smith at Horvik's Anvil (north of the general store)
     </li>
     <li>
-        Sell to Specialty Shop
+        Sell to Specialty Shop. I almost always make and sell short swords. The give the best gp/bar rate for an item requiring 1 bar.
+        Since the Varrock sword shop is pretty close to the Varrock anvils, that's my shop of choice.
     </li>
     <li>
         repeat
     </li>
 </ul>
 <p>
-    Ideally you could mine iron at Varrock mine and coal at Barbarian Village, 
+    Ideally you could @Html.ActionLink("Mine", "Mine", "Skills", routeValues: null, htmlAttributes: new { id = "MiningLinkSkillsSmithing_4" })
+    iron at Varrock mine and coal at Barbarian Village,
     but both those locations are often crowded.
 </p>
 
 <hr id="Section_Divider">
 
+<h4 id="Section_Header_ShopSellPrices">Selling Price of Steel to Specialty shops</h4>
+<ul>
+    <li>
+        Platebody -- Horvik's Armour Shop in Varrock -- 1200 gold -- 240 gold/bar
+    </li>
+    <li>
+        Platelegs -- Louie's Armoured LEgs Bazaar in Al Kharid -- 650 gold -- 216.67 gold/bar
+    </li>
+    <li>
+        Sword -- Varrock Swordshop -- 195 gold
+    </li>
+    <li>
+        Square Shield -- Cassie's Shield Shop in Falador -- 360 gold -- 180 gold/bar
+    </li>
+    <li>
+        Med Helm -- Helmet Shop in Barbarian Village -- 180 gold
+    </li>
+    <li>
+        Kiteshield -- Cassie's Shield Shop in Falador -- 510 gold -- 170 gold/bar
+    </li>
+    <li>
+        Full Helm -- Helmet Shop in Barbarian Village -- 330 gold -- 165 gold/bar
+    </li>
+    <li>
+        Chainbody -- Wayne's Chains in Falador -- 487 gold -- 162.333 gold/bar
+    </li>
+    <li>
+        Chainbody -- Horvik's Armour Shop in Varrock -- 450 gold -- 150 gold/bar
+    </li>
+    <li>
+        Longsword -- Varrock Swordshop -- 300 gold -- 150 gold/bar
+    </li>
+    <li>
+        Mace -- Flynn's Mace Market -- 135 gold  -- 135
+    </li>
+    <li>
+        Battleaxe -- Bob's Brilliant Axes -- 403 gold -- 134.333 gold/bar
+    </li>
+    <li>
+        Axe -- Bob's Brilliant Axes  -- 120 gold
+    </li>
+    <li>
+        Scimitar -- Zeke's Superior Scimitars -- 228 gold -- 114 gold/bar
+    </li>
+    <li>
+        Plateskirt -- Ranael's Super Skirt Store -- 300 gold -- 100 gold/bar
+    </li>
+    <li>
+        Battleaxe -- Brian's Battleaxe Bazaar in Port Sarim -- 260 gold -- 86.667 gold/bar
+    </li>
+    <li>
+        Dagger -- Varrock Swordshop - 75 gold
+    </li>
+</ul>
+
+<hr id="Section_Divider">
+
 <h4 id="Section_Header_Notes">General Side Notes</h4>
 <p>
-    If you really don't want to do Knight's Sword quest, then you could mine 
-    copper and tin at Varrock mine and then traveled to Lumbridge furnace and 
+    If you really don't want to do Knight's Sword quest, then you could mine
+    copper and tin at Varrock mine and then travel to Lumbridge furnace and
     back for anvil until you have level for iron.
 </p>
 <p>
-    You could also mine iron and coal in Dwarven Mine, then smelt in Falador 
-    furnace. Smith on anvil in Dwarven mines and sell to the general store. 
-    Doric's anivl is kinda far, so I never used that.
+    You could also mine iron and coal in Dwarven Mine, then smelt in Falador
+    furnace. Smith on anvil in Dwarven mines and sell to the general store.
+    Doric's anivl is kinda far, and you have to go back into the dwarven mines to get more ore anyway.
 </p>
 <p>
-    Smithing really is the big money maker for me. That is why I stress selling 
-    the items you make, it can make lots of money for you. However, general 
-    stores will buy your items for far less than a speciality shop. Because of 
-    that, I try to make items speciifcally for specialty shops. Platebodies 
-    are the best to sell, as they return the highest coin / bar used. Platelegs 
-    are second best, and short swords are third best. I usually make lots of 
-    swords, and then switch to platebodies when I can make them. That way I can 
-    sell to the specialy shops in Varrock (there's only a sword shop and 
+    Smithing really is the big money maker for me. That is why I stress selling
+    the items you make, it can make lots of money for you. However, general
+    stores will buy your items for far less than a speciality shop. Because of
+    that, I try to make items speciifcally for specialty shops. Platebodies
+    are the best to sell, as they return the highest coin / bar used. Platelegs
+    are second best, and short swords are third best. I usually make lots of
+    swords, and then switch to platebodies when I can make them. That way I can
+    sell to the specialy shops in Varrock (there's only a sword shop and
     platebody shop there, no plateleg shop).
 </p>
