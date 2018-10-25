@@ -16,7 +16,7 @@ namespace IntegrationTests.Controllers
     {
         public TestContext TestContext { get; set; }
 
-        #region IndexRegion
+        #region Index
         [TestMethod]
         public void Controller_Home_Index_Default_Should_Pass()
         {
